@@ -6,7 +6,7 @@ Here are the wireframes for the projects home, about, resources, contact and soc
 
 ### Home Page
 
-![wireframe of Home Page](wireframes/home.jpg)
+![wireframe of Home Page](wireframes/Home.jpg)
 
 Header - The header will include the logo with name of site below centered on the page.
 
@@ -18,7 +18,7 @@ Footer - The footer will include links to social media accounts, the site discla
 
 ### About Page
 
-![wireframe of About Page](wireframes/about.jpg)
+![wireframe of About Page](wireframes/About.jpg)
 
 Header - The header will include the logo with name of site below centered on the page.
 
@@ -30,7 +30,7 @@ Footer - The footer will include links to social media accounts, the site discla
 
 ### Resources Page
 
-![wireframe of Resources Page](wireframes/resources.jpg)
+![wireframe of Resources Page](wireframes/Resources.jpg)
 
 Header - The header will include the logo with name of site below centered on the page.
 
@@ -42,7 +42,7 @@ Footer - The footer will include links to social media accounts, the site discla
 
 ### Contact Page
 
-![wireframe of Contact Page](wireframes/contact.jpg)
+![wireframe of Contact Page](wireframes/Contact.jpg)
 
 Header - The header will include the logo with name of site below centered on the page.
 
@@ -54,7 +54,7 @@ Footer - The footer will include links to social media accounts, the site discla
 
 ### Social Media Page
 
-![wireframe of Social Media Page](wireframes/social.jpg)
+![wireframe of Social Media Page](wireframes/Social.jpg)
 
 Header - The header will include the logo with name of site below centered on the page.
 
