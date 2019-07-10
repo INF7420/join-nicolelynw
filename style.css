@@ -30,6 +30,8 @@ header {
     padding: 0.5rem 1rem;
     background-color: white;
     text-align: center;
+    display: block;
+    float: center;
 }
 
 main {
@@ -63,11 +65,10 @@ nav a {
 }
 
 .main-nav li {
-  display:block;
-  width:120px;
-  float: center;
+  display:inline-block;
+  width:175px;
 	margin-left:10px;
-  border:1px solid white;
+  border:2px solid white;
   text-align: center;
 }
 
@@ -148,6 +149,36 @@ nav a {
   top: 0;
 }
 
+.featured-image-container {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.featured-image-container img {
+  max-height: 70vh;
+}
+
+.featured-text-container {
+  float: left;
+  width: 50%;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.featured-text-container h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #4372AA;
+}
+
+.featured-text-container p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color:  rgb(58, 55, 55);
+}
+
 .social-media {
   display: inline-block;
 }
@@ -175,4 +206,60 @@ nav a {
     justify-content: flex-end;
     opacity: 1;
   }
+}
+
+label {
+  display: block;
+  float: left;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.form-input {
+  border: 2px solid darkgray;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+[type="submit"] {
+  background: #4372AA;
+  color: white;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border: 0;
+  padding: .5em;
+  cursor: pointer;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus {
+  background: lightgrey;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  margin: -1em 0 1.5em;
+  width: 100%;
 }

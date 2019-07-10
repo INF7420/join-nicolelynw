@@ -21,7 +21,38 @@
           </nav>
       </header>
   <main>
+      <div class="featured-image-container"><img src="images/boys.jpg" alt="Boys reading book together"></div>
+      <div class="featured-text-container">
+        <h1 id="section-title">We would love to hear from you!</h1>
+        <p>Please fill out the form below and Megan or Nicole will be in contact with you shortly.</p>
+      </div>
+
+      <form action="https://formspree.io/fm7702@wayne.edu" method="POST" class="validate">
+      <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name"
+        class="form-input" required>
+      </div>
+      
+      <div>
+        <label for="email">Email Address: </label>
+        <input id="email" type="email" name="_replyto"
+        class="form-input" required>
+      </div>
+      
+      <div>
+        <label for="message">Tell us what you think:</label>
+        <textarea name="message" id="message" class="form-input" 
+        rows="5" required></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Send">
+      </div>
+
+    </form>
   </main>
+
   <footer>
       <div class="social-media">
         <ul>
@@ -31,12 +62,14 @@
         </ul>
       </div>
       <div>
-        <p>The contents of this site are opinions of Literacy-A-Little LLC partners unless 
+        <p>The contents of this site are the opinions of Literacy-A-Little LLC partners unless 
           otherwise noted.</p>
       </div>
       <div>
         <p>© COPYRIGHT 2019 ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
