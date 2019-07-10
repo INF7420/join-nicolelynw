@@ -203,9 +203,13 @@ nav a {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     opacity: 1;
   }
+}
+
+form {
+  clear: both;
 }
 
 label {
