@@ -1,50 +1,82 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: white;
-    color: rgb(58, 55, 55);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+  color: rgb(58, 55, 55);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 a {
-    color: rgb(58, 55, 55);
+  color: rgb(58, 55, 55);
 }
 
 img {
-    display: block;
-    margin: 0px auto;
-    max-width: 100%;
-    align-content: center;
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  align-content: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 25px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 25px;
+}
+
+h2 {
+  border: none;
+  margin-top: 1em;
+  padding: 10px;
+  color: #4372aa;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+p {
+  border: none;
+  padding: 10px;
+  font-size: 1.1em;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 header {
-    margin: 1rem 1rem 0 1rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    text-align: center;
-    display: block;
-    float: center;
+  margin: 1rem 1rem 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  text-align: center;
+  display: block;
+  float: center;
 }
 
 main {
-    padding: 1rem 1rem 2rem;
-    text-align: center;
+  padding: 1rem 1rem 2rem;
+  text-align: center;
 }
 
 footer {
-    padding: 1rem;
-    background-color: lightgrey;
-    color:darkgrey;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 1rem;
+  background-color: lightgrey;
+  color: darkgrey;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 nav a {
@@ -57,33 +89,40 @@ nav a {
 }
 
 .main-nav {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  opacity: 0;
+  height: 0;
   list-style: none;
   position: relative;
-	margin:25px;
-	max-width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 45px 25px 25px;
+  max-width: 100%;
+  font-size: 1.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .main-nav li {
-  display:inline-block;
-  width:175px;
-	margin-left:10px;
-  border:2px solid white;
+  display: block;
+  width: 100%;
+  margin-left: 10px;
+  border: 2px solid white;
   text-align: center;
 }
 
 .main-nav a {
-	display:block;
-	padding:4px;
-	text-decoration: none;
-	background-color: white;
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  background-color: white;
   color: rgb(58, 55, 55);
+  font-weight: 400;
   text-align: center;
 }
 
 .main-nav a:hover {
   background-color: lightgrey;
-	color: rgb(58, 55, 55);
+  color: rgb(58, 55, 55);
 }
 
 .menu-icon {
@@ -170,13 +209,13 @@ nav a {
 .featured-text-container h1 {
   font-size: 1.75rem;
   margin-bottom: 2rem;
-  color: #4372AA;
+  color: #4372aa;
 }
 
 .featured-text-container p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color:  rgb(58, 55, 55);
+  color: rgb(58, 55, 55);
 }
 
 .social-media {
@@ -205,6 +244,15 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     opacity: 1;
+    height: auto;
+    clip: initial;
+    clip-path: initial;
+    margin: 25px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    width: 150px;
   }
 }
 
@@ -215,7 +263,7 @@ form {
 label {
   display: block;
   float: left;
-  font-weight: 600;
+  font-weight: 550;
   margin-bottom: 1em;
 }
 
@@ -235,7 +283,7 @@ label {
 }
 
 [type="submit"] {
-  background: #4372AA;
+  background: #4372aa;
   color: white;
   width: 100%;
   font-size: 1.5em;
@@ -244,7 +292,7 @@ label {
   letter-spacing: 1px;
   border-radius: 4px;
   border: 0;
-  padding: .5em;
+  padding: 0.5em;
   cursor: pointer;
 }
 
