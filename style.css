@@ -89,9 +89,13 @@ nav a {
 }
 
 .main-nav {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  opacity: 0;
+  height: 0;
   list-style: none;
   position: relative;
-  margin: 25px;
+  margin: 45px 25px 25px;
   max-width: 100%;
   font-size: 1.1em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -99,8 +103,8 @@ nav a {
 }
 
 .main-nav li {
-  display: inline-block;
-  width: 150px;
+  display: block;
+  width: 100%;
   margin-left: 10px;
   border: 2px solid white;
   text-align: center;
@@ -240,6 +244,15 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     opacity: 1;
+    height: auto;
+    clip: initial;
+    clip-path: initial;
+    margin: 25px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    width: 150px;
   }
 }
 
